@@ -6,28 +6,28 @@ const upgrades = [
         id:7,
         title: "Interior Steam Clean (deodorize & sanitize)",
         href:'#',  
-        img:'',
+        img:'./photos/interior.png',
         price:'$100-$200',
     },
     {
         id:8,
         title: "Trim Restoration",
         href:'#',   
-        img:'',
+        img:'./photos/trim.png',
         price:'$80',
     },
     {
         id:9,
         title: "Headlight Restoration",
         href:'#', 
-        img:'',
+        img:'./photos/headlight.png',
         price:'$60',
     },
     {
         id:10,
         title: "Engine Bay Detail ",
         href:'#',
-        imageUrl:'',
+        img:'./photos/engine.jpg',
         price:'$60',
     },
 ]
@@ -48,7 +48,7 @@ export default function Upgrades() {
                 key={u.id}
                 className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
               >
-                <img alt="" src={u.imageUrl} className="absolute inset-0 -z-10 h-full w-full object-cover" />
+                <img alt="" src={u.img} className="absolute inset-0 -z-10 h-full w-full object-cover" />
                 <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                 <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
   

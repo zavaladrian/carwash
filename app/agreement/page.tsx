@@ -44,17 +44,17 @@ export default function Agreement() {
           <p className="mt-6">
           2k-detail reserves the right to modify this statement at any time. Any changes to this Service Contract will be listed in this section. 2k-detail does not make any commitment to update the materials.
           </p>
-          <ul role="listitem" className="mt-8 space-y-8 text-gray-600 pl-4">
+          <ul role="list" className="mt-8 space-y-8 text-gray-600 pl-4">
                 <li className="flex gap-x-3">
                  
                   <span>
-                    <strong className="font-semibold text-gray-900">By using our services you hereby understand that 2k-detail does not guarantee any specific outcomes or results with our detailing services..</strong> 
+                    <strong className="font-semibold text-gray-900">-By using our services you hereby understand that 2k-detail does not guarantee any specific outcomes or results with our detailing services..</strong> 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   
                   <span>
-                    <strong className="font-semibold text-gray-900">2k-detail limits its liability to the total dollar amount of each job.​</strong> 
+                    <strong className="font-semibold text-gray-900">-2k-detail limits its liability to the total dollar amount of each job.​</strong> 
                   </span>
                 </li>
                 

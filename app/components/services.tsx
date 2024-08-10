@@ -7,7 +7,7 @@ const packages = [
     href: "#",
     description:
       "Car hand washed w/ boars head brushes for crevices and door jambs, wheels and wheel wells deep cleaned, exterior spray coated, tires shined, and interior detailed to remove dust and contaminates.",
-    imageUrl: "",
+    img: "./photos/basic.png",
     vehicle: {
       car: "Car - $120",
       midsize: "Mid-Size- $160",
@@ -20,7 +20,7 @@ const packages = [
     href: "#",
     description:
       "Basic package + clay bar and iron removal on paint/wheels; this process removes bonded contaminates and deep cleans paint and wheels, allowing for longer-lasting protection from the spray coating.",
-    imageUrl: "",
+    img: "./photos/plus.png",
     vehicle: {
       car: "Car - $160",
       midsize: "Mid-Size- $220",
@@ -33,7 +33,7 @@ const packages = [
     href: "#",
     description:
       "Plus package + machine polish to exterior; this process removes oxidation and reduces scratches/swirls, providing a big boost in gloss. Vehicle must be on-site for this service.",
-    imageUrl: "",
+    img: "./photos/premium.png",
     vehicle: {
       car: "Car - $350",
       midsize: "Mid-Size- $450",
@@ -46,7 +46,7 @@ const packages = [
     href: "#",
     description:
       "Our paint correction service is meant for major paint imperfections and requires a full grade procedure ranging from 8-20+ hours of fine correcting. All services are quoted on a per client basis and can be booked via call. All correction services come with a mandatory consultation that includes a paint thickness gauge test to ensure we provide the best correction to your vehicle. Vehicle must be on-site for this service.",
-    imageUrl: "",
+    img: "./photos/paintcorrection.jpeg",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const packages = [
     href: "#",
     description:
       "We offer ceramic coating services that provide 3+ years of protection to your vehicles painted surfaces. This service requires polishing, or 1 step paint correction, in addition to the Plus Package. Note: 8-12 hours go into this service, so at least 1 full day is required. Vehicle must be on-site for this service.",
-    imageUrl: "",
+    img: "./photos/ceramiccoating.jpg",
     vehicle: {
       car: "Car - $700",
       midsize: "Mid-Size- $850",
@@ -67,7 +67,7 @@ const packages = [
     href: "#",
     description:
       "1 step paint correction (to achieve even greater gloss and reduction in scratches, swirls, and oxidation) + ceramic coating",
-    imageUrl: "",
+    img: "./photos/coating2.png",
     vehicle: {
       car: "Car - $800",
       midsize: "Mid-Size- $950",
@@ -75,38 +75,6 @@ const packages = [
     },
   },
 ];
-
-const upgrades = [
-    {
-        id:7,
-        title: "Interior Steam Clean (deodorize & sanitize)",
-        href:'#',  
-        img:'',
-        price:'$100-$200',
-    },
-    {
-        id:8,
-        title: "Trim Restoration",
-        href:'#',   
-        img:'',
-        price:'$80',
-    },
-    {
-        id:9,
-        title: "Headlight Restoration",
-        href:'#', 
-        img:'',
-        price:'$60',
-    },
-    {
-        id:10,
-        title: "Engine Bay Detail ",
-        href:'#',
-        img:'',
-        price:'$60',
-    },
-]
-
 
 
 
@@ -131,7 +99,7 @@ export default function Prices() {
               <div className="relative w-full">
                 <img
                   alt=""
-                  src={p.imageUrl}
+                  src={p.img}
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
