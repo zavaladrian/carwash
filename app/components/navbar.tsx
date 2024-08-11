@@ -49,7 +49,7 @@ export default function NavBar () {
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
                       item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
+                      'rounded-md px-3 py-2 text-lg font-medium',
                     )}
                   >
                     {item.name}
@@ -66,7 +66,7 @@ export default function NavBar () {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">Schedule an Appointment</span>
-              <p>Schedule an Appontment</p>
+              <p className='text-xl'>Schedule an Appontment</p>
             </button>
             </Link>
           </div>
