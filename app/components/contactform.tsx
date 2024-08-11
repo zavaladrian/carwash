@@ -15,7 +15,7 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3 p-9 bg-white ">
 
         <div className="space-y-12">
-          <h2 className="text-5xl">Schedule an Appointment</h2>
+          <h2 className="text-3xl lg:text-5xl">Schedule an Appointment</h2>
           <p>
             We are an appointment-only service serving Lemont, IL and
             surrounding areas. Please use the form for appointment requests,
@@ -167,7 +167,7 @@ const ContactForm = () => {
                 id={`a-${a.id}`}
                 name={`a-${a.id}`}
                 type="checkbox"
-                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                className="h-4 w-4 rounded border-gray-700 text-indigo-600 focus:ring-indigo-600"
               />
             </div>
           </div>
@@ -188,7 +188,7 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 rows={3}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-1 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 defaultValue={""}
               />
             </div>
