@@ -2,91 +2,48 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-// //Get all needed elements from the DOM
-// const contactForm = document.querySelector('#contact-form');
-// const submitBtn = document.querySelector('.submit-btn');
-// const nameInput = document.querySelector('#user_name');
-// const emailInput = document.querySelector('#user_email');
-// const messageInput = document.querySelector('#message');
 
-// //Get needed data from email Js
-// const publicKey ='XpzFB5BaOHBtQXtSJ';
-// const serviceID = 'service_hn1dk3q';
-// const templateID='template_tkhhg4g';
+const ContactForm: React.FC = () => {
+  // Typing the ref with HTMLFormElement
+  const form = useRef<HTMLFormElement>(null);
 
-// //Initialize email JS w public key
-// emailjs.init(publicKey);
-
-// //Add submit event to the form
-// contactForm?.addEventListener('submit', e => {
-//   //prevent form default behavior
-//   e.preventDefault();
-//   //change button text
-//   submitBtn.innerText = 'Just A Moment...';
-//   //Get all input field values
-//   const inputFields = {
-//     name: nameInput.value,
-//     email: emailInput.value,
-//     message: messageInput.value
-//   }
-//   /*Send the email
-//   (Add service, temp ID and input field values)*/
-//   emailjs.send(serviceID, templateID, inputFields)
-//   .then(() => {
-//     //Change button text
-//     submitBtn.InnerText='Message Sent Successfully';
-//     //Clear out all input fields
-//     nameInput.value = '';
-//     emailInput.value = '';
-//     messageInput.value = '';
-//   }, (error) => {
-//     //Console log the error
-//     console.log(error);
-//     //Change button Text
-//     submitBtn.innerText = 'Something went wrong';
-//   }
-// );
-// });
-
-const ContactForm = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Collect selected checkbox values
-    const selectedAddons: string[] = [];
-    const checkboxes = form.current.querySelectorAll('input[name="addon"]:checked');
-    checkboxes.forEach((checkbox: { parentElement: { previousSibling: { textContent: string; }; }; }) => {
-      selectedAddons.push(checkbox.parentElement.previousSibling.textContent.trim());
-    });
+    if (form.current) {
+      // Collect selected checkbox values
+      const selectedAddons: string[] = [];
+      const checkboxes = form.current.querySelectorAll('input[name="addon"]:checked') as NodeListOf<HTMLInputElement>;
+      checkboxes.forEach((checkbox) => {
+        selectedAddons.push(checkbox.value);
+      });
 
-    // Prepare email parameters
-    const templateParams = {
-      user_name: form.current.user_name.value,
-      user_email: form.current.user_email.value,
-      phone_number: form.current.phone_number.value,
-      car_make: form.current.car_make.value,
-      car_year: form.current.car_year.value,
-      car_model: form.current.car_model.value,
-      user_package: form.current.user_package.value,
-      addons: selectedAddons.join(', '), // Convert array to a comma-separated string
-      message: form.current.message.value,
-    };
+      // Prepare email parameters
+      const templateParams = {
+        user_name: form.current.user_name.value,
+        user_email: form.current.user_email.value,
+        phone_number: form.current.phone_number.value,
+        car_make: form.current.car_make.value,
+        car_year: form.current.car_year.value,
+        car_model: form.current.car_model.value,
+        user_package: form.current.user_package.value,
+        addons: selectedAddons.join(', '),
+        message: form.current.message.value,
+      };
 
-    // Send email using EmailJS
-    emailjs
-      .send("service_hn1dk3q", "template_tkhhg4g", templateParams, "XpzFB5BaOHBtQXtSJ")
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      // Send email using EmailJS
+      emailjs
+        .send("service_hn1dk3q", "template_tkhhg4g", templateParams, "XpzFB5BaOHBtQXtSJ")
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    }
   };
-
 
   return (
     <form ref={form} onSubmit={sendEmail}>
