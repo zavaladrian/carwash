@@ -16,7 +16,7 @@ export default function Home() {
         <div className="mx-auto max-w-2xl sm:text-center">
      
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">   <span className="font-bold">Why Choose</span> Us?.</p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg lg:text-2xl leading-8 text-gray-600">
                 We are family-owned and operated. Rest assured, we are registered
               as an LLC and covered with insurance. Customer service is our #1
               priority.
@@ -27,7 +27,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <img
             alt="App screenshot"
-            src="./photos/truck.png" 
+            src="./photos/truckcali.png" 
             width={2432}
             height={1442}
             className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
@@ -37,10 +37,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8  md:text-3xl text-pretty">
         2k-detail is committed to offering the highest level of service. With over a decade of detailing experience and work as a chemist formulating products in the car care industry, our expertise in car care will take your vehicle to the next level.  We are family-owned and operated. Rest assured, we are registered as an LLC and covered with insurance. Customer service is our #1 priority.
-            </div>
-          
+      </div>    
       </div>
 
         <Prices />
