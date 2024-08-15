@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function NavBar () {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-[#5A2538]">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -30,16 +30,19 @@ export default function NavBar () {
               <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
             </DisclosureButton>
           </div>
+
+          
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
              <Link href='/'><div className="flex flex-shrink-0 items-center">
             
               <img
                 alt="Your Company"
                 src='./photos/logo.jpeg'
-                className="h-8 w-auto"
+                className="h-8 md:h-14 w-auto"
               />
             </div> 
             </Link>
+
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
@@ -57,12 +60,15 @@ export default function NavBar () {
                 ))}
               </div>
             </div>
+
           </div>
+
+
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link href='/appointment'>
             <button
               type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              className="relative rounded-full bg-gray-800 p-2  text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">Schedule an Appointment</span>

@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3 p-9 bg-white ">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b-2 border-gray-900/10 pb-12 md:grid-cols-3 p-9 bg-white border-t-2 border-gray-600 ">
         <div className="space-y-12">
           <h2 className="text-3xl lg:text-5xl">Schedule an Appointment</h2>
           <p>
@@ -243,7 +243,7 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-6 flex items-center justify-end gap-x-6 pr-2 bg-white">
+      <div className="mt-6 mb-2 flex items-center justify-end gap-x-6 pr-2 bg-white">
         <button
           type="submit"
           value="Send"

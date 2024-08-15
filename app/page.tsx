@@ -2,6 +2,9 @@
 import Hero from "./components/Hero";
 import Prices from "./components/services";
 import Upgrades from "./components/upgrades";
+import ContactForm from "./components/contactform";
+
+
 
 export default function Home() {
   return (
@@ -48,6 +51,8 @@ export default function Home() {
               <button className="text-3xl rounded-xl bg-red-500 p-2 font-bold hover:bg-rose-400">Click Here</button>
             </section>
           </div> */}
+          
+          <ContactForm />
       </main>
     </div>
   );

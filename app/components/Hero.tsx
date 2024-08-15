@@ -1,6 +1,7 @@
 'use client'
 
 
+
 export default function Heros() {
 
 
@@ -25,10 +26,10 @@ export default function Heros() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight font-serif text-white sm:text-6xl">
-              <span className='text-7xl'>2</span>k- DETAIL 
+            <h1 className="text-4xl font-bold tracking-tight font-pacifico text-white sm:text-9xl">
+              <span className='md:text-9xl'>2</span>k-Detail 
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-6  text-lg leading-8 text-gray-300">
               Serving Lemont, IL & Surrounding Areas
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
