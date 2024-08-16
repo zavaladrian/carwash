@@ -44,13 +44,7 @@ export default function Home() {
 
         <Prices />
         <Upgrades />
-          {/* <div className=" w-auto text-center space-y-7 bg-slate-500/40 p-10">
-            <section className="bg-white p-5">
-              <h2 className="text-9xl p-2 font-serif">Contact Us</h2>
-              <button className="text-3xl rounded-xl bg-red-500 p-2 font-bold hover:bg-rose-400">Click Here</button>
-            </section>
-          </div> */}
-          
+
           <ContactForm />
       </main>
     </div>
