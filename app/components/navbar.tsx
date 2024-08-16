@@ -18,7 +18,7 @@ function classNames(...classes: string[]) {
 
 export default function NavBar () {
   return (
-    <Disclosure as="nav" className="bg-[#5A2538]">
+    <Disclosure as="nav" className="bg-white backdrop-blur-md sticky top-0 bg-opacity-8 z-30">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -51,8 +51,8 @@ export default function NavBar () {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-lg font-medium',
+                      item.current ? 'bg-gray-900 text-white' : 'text-black hover:bg-rose-900 hover:text-white',
+                      'rounded-2xl px-3 py-2 text-lg font-medium',
                     )}
                   >
                     {item.name}
@@ -68,7 +68,7 @@ export default function NavBar () {
             <Link href='/appointment'>
             <button
               type="button"
-              className="relative rounded-full bg-gray-800 p-2  text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              className="relative rounded-xl bg-gray-800 p-2  text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 "
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">Schedule an Appointment</span>
