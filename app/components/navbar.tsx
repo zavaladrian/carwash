@@ -12,6 +12,15 @@ const navigation = [
   
 ]
 
+
+const mobilenavigation = [
+  {name: 'Home', href:'/', current: false },
+  {name: 'About Us', href:'/about', current: false },
+  {name: 'Service Agreement', href:'/agreement', current: false },
+  {name: 'Schedule an Appointment', href:'/appointment', current: false},
+  
+]
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
@@ -82,7 +91,7 @@ export default function NavBar () {
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
+          {mobilenavigation.map((item) => (
             <DisclosureButton
               key={item.name}
               as="a"
@@ -97,8 +106,6 @@ export default function NavBar () {
               
             </DisclosureButton>
           ))}
-          <Link href='/appointment'>
-          <p className="space-y-1  pb-3 pt-2 block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Schedule an Appointment</p></Link>
         </div>
       </DisclosurePanel>
     </Disclosure>
