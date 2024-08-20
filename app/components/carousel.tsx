@@ -57,7 +57,7 @@ export default function ModernCarousel() {
           animate="animate"
           exit="exit"
           key={images[imageIndex].id}
-          className="text-black text-xl md:text-2xl p-2 rounded-lg bg-rose-900/10 backdrop-blur-lg font-semibold shadow-lg absolute z-20 left-10 bottom-4"
+          className="text-white text-xl md:text-2xl p-2 rounded-lg bg-rose-900/10 backdrop-blur-lg font-semibold shadow-lg absolute z-20 left-10 bottom-4"
         >
           {images[imageIndex].title}
         </motion.span>
