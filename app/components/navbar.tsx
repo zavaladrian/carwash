@@ -9,7 +9,7 @@ const navigation = [
   {name: 'Home', href:'/', current: false },
   {name: 'About Us', href:'/about', current: false },
   {name: 'Service Agreement', href:'/agreement', current: false },
-  
+  {name: 'Gallery', href:'/gallery', current: false },
 ]
 
 
@@ -17,6 +17,7 @@ const mobilenavigation = [
   {name: 'Home', href:'/', current: false },
   {name: 'About Us', href:'/about', current: false },
   {name: 'Service Agreement', href:'/agreement', current: false },
+  {name: 'Gallery', href:'/gallery', current: false },
   {name: 'Schedule an Appointment', href:'/appointment', current: false},
   
 ]
@@ -42,8 +43,8 @@ export default function NavBar () {
 
           
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-             <Link href='/'><div className="flex flex-shrink-0 items-center">
-            
+             <Link href='/'>
+             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
                 src='./photos/logo.jpeg'

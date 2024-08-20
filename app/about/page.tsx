@@ -1,7 +1,9 @@
 import React from 'react'
+import Footer from '../components/footer'
 
 export default function AboutPage() {
   return (
+    <div>
     <div className="overflow-hidden bg-white py-32">
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
@@ -57,6 +59,9 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+     
+    </div>
+     <Footer/>
     </div>
   )
 }
