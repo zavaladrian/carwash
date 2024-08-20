@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Prices from "./components/services";
 import Upgrades from "./components/upgrades";
 import ContactForm from "./components/contactform";
-
+import Footer from "./components/footer";
 
 
 export default function Home() {
@@ -47,6 +47,7 @@ export default function Home() {
 
           <ContactForm />
       </main>
+      <Footer />
     </div>
   );
 }

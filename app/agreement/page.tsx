@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Footer from '../components/footer'
 
 export default function Agreement() {
   return (
+    <div>
     <div className="bg-white px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
         <p className="text-base font-semibold leading-7 text-indigo-600">2K-Detail </p>
@@ -63,6 +64,9 @@ export default function Agreement() {
           
         </div>
       </div>
+    
+    </div>
+      <Footer />
     </div>
   )
 }
