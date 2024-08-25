@@ -114,7 +114,7 @@ export default function Prices() {
                       {p.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  <p className="mt-5 text-sm leading-6 text-gray-600">
                     {p.description}
                   </p>
                 </div>

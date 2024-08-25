@@ -48,9 +48,9 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail} className=" bg-white">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b-2 border-gray-900/10 pb-12 md:grid-cols-3 p-20 bg-white border-t-2 border-gray-600 ">
-          <div className="space-y-12">
+          <div className="space-y-12 text-black">
             <h2 className="text-3xl lg:text-5xl">Schedule an Appointment</h2>
             <p>
               We are an appointment-only service serving Lemont, IL and
@@ -246,7 +246,7 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-6 mb-2 flex items-center justify-end gap-x-6 pr-2 bg-white">
+        <div className="mt-6 mb-2 pb-3 flex items-center justify-end gap-x-6 pr-2 bg-white">
           <button
             type="submit"
             value="Send"
