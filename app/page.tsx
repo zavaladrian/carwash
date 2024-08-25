@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8  md:text-3xl text-pretty">
+      <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8  md:text-3xl text-center text-black">
         2k-detail is committed to offering the highest level of service. With over a decade of detailing experience and work as a chemist formulating products in the car care industry, our expertise in car care will take your vehicle to the next level.  We are family-owned and operated. Rest assured, we are registered as an LLC and covered with insurance. Customer service is our #1 priority.
       </div>    
       </div>

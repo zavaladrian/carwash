@@ -4,7 +4,7 @@ const packages = [
   {
     id: 1,
     title: "Basic Package",
-    href: "#",
+    
     description:
       "Car hand washed w/ boars head brushes for crevices and door jambs, wheels and wheel wells deep cleaned, exterior spray coated, tires shined, and interior detailed to remove dust and contaminates.",
     img: "./photos/basic.png",
@@ -17,9 +17,9 @@ const packages = [
   {
     id: 2,
     title: "Plus Package",
-    href: "#",
+    
     description:
-      "Basic package + clay bar and iron removal on paint/wheels; this process removes bonded contaminates and deep cleans paint and wheels, allowing for longer-lasting protection from the spray coating.",
+      "Basic package + clay bar and iron removal; this process removes bonded contaminates and deep cleans paint and wheels, allowing for longer-lasting protection from the spray coating.",
     img: "./photos/plus.png",
     vehicle: {
       car: "Car - $160",
@@ -30,7 +30,7 @@ const packages = [
   {
     id: 3,
     title: "Premium Package",
-    href: "#",
+    
     description:
       "Plus package + machine polish to exterior; this process removes oxidation and reduces scratches/swirls, providing a big boost in gloss. Vehicle must be on-site for this service.",
     img: "./photos/premium.png",
@@ -43,15 +43,15 @@ const packages = [
   {
     id: 4,
     title: "Paint Correction",
-    href: "#",
+    
     description:
       "Our paint correction service is meant for major paint imperfections and requires a full grade procedure ranging from 8-20+ hours of fine correcting. All services are quoted on a per client basis and can be booked via call. All correction services come with a mandatory consultation that includes a paint thickness gauge test to ensure we provide the best correction to your vehicle. Vehicle must be on-site for this service.",
     img: "./photos/paintcorrection.jpeg",
   },
   {
     id: 5,
-    title: "Polish and Ceramic Coating Level 1",
-    href: "#",
+    title: "Polish and Ceramic Coating Lv 1",
+   
     description:
       "We offer ceramic coating services that provide 3+ years of protection to your vehicles painted surfaces. This service requires polishing, or 1 step paint correction, in addition to the Plus Package. Note: 8-12 hours go into this service, so at least 1 full day is required. Vehicle must be on-site for this service.",
     img: "./photos/ceramiccoating.jpg",
@@ -63,8 +63,8 @@ const packages = [
   },
   {
     id: 6,
-    title: "Polish and Ceramic Coating Level 2",
-    href: "#",
+    title: "Polish and Ceramic Coating Lv 2",
+    
     description:
       "1 step paint correction (to achieve even greater gloss and reduction in scratches, swirls, and oxidation) + ceramic coating",
     img: "./photos/coating2.png",
@@ -109,10 +109,10 @@ export default function Prices() {
 
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href={p.href}>
-                      <span className="absolute inset-0" />
+                    
+                      <span className="absolute inset-0 " />
                       {p.title}
-                    </a>
+                   
                   </h3>
                   <p className="mt-5 text-sm leading-6 text-gray-600">
                     {p.description}

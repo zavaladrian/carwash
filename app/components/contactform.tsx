@@ -50,8 +50,8 @@ const ContactForm: React.FC = () => {
     <>
       <form ref={form} onSubmit={sendEmail} className=" bg-white">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b-2 border-gray-900/10 pb-12 md:grid-cols-3 p-20 bg-white border-t-2 border-gray-600 ">
-          <div className="space-y-12 text-black">
-            <h2 className="text-3xl lg:text-5xl">Schedule an Appointment</h2>
+          <div className="space-y-12 text-black pr-1">
+            <h2 className="text-3xl md:text-2xl lg:text-4xl font-extrabold">Schedule an Appointment</h2>
             <p>
               We are an appointment-only service serving Lemont, IL and
               surrounding areas. Please use the form for appointment requests,
